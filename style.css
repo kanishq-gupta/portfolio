@@ -867,6 +867,7 @@ body.light-mode header {
     overflow: hidden;
 }
 
+
 .about-text::before {
     content: '';
     position: absolute;
@@ -1143,4 +1144,30 @@ body.light-mode header {
     .cursor, .cursor-follower {
         display: none;
     }
+}
+/* Add this to your existing CSS */
+.date-badge {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(124, 58, 237, 0.3);
+    z-index: 1;
+    transition: var(--transition);
+}
+
+.education-content:hover .date-badge {
+    transform: translateX(-50%) translateY(-5px);
+    box-shadow: 0 8px 25px rgba(124, 58, 237, 0.4);
+}
+
+/* Update education-content to accommodate date badge */
+.education-content {
+    margin-top: 25px;
 }
