@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanishk Gupta - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="dark-mode">
+    <div class="loading">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+    <div id="particles"></div>
+    
+    <div class="audio-control">
+        <button id="musicToggle" class="control-btn">
+            <span class="material-icons">volume_up</span>
+        </button>
+    </div>
+    
+    <div class="theme-toggle">
+        <button id="themeToggle" class="control-btn">
+            <span class="material-icons">dark_mode</span>
+        </button>
+    </div>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="container">
+                    <div class="gray-div">
+                        <div class="profile-image">
+                            <img alt="Profile picture of Kanishk Gupta" src="your-image.png">
+                        </div>
+                        <div class="name">KANISHK GUPTA</div>
+                    </div>
+                    
+
+                </div>
+            </div>
+            <div class="hi">
+                <ul>
+                    <li><div class="subtitle">UI/UX Designer & Full Stack Developer</div></li>
+                    <li><div class="scroll-indicator" id="scrollIndicator"></div></li>
+                    <li><div class="cta-buttons">
+                        <a href="resume.pdf" class="btn secondary" download>Download Resume</a>
+                    </div></li>
+                </ul>
+            </div>
+        </section>
+
+
+
+<!-- Replace the existing about section with this clean version -->
+ <section id="about" class="about-section">
+      <div class="glowing-circle"></div>
+      <h2 class="animated-text">About Me</h2>
+      <div class="about-text">
+        <div class="typing-container">
+          <p class="typing-text">Hello! I'm <span class="highlight">Kanishk Gupta</span></p>
+        </div>
+        <p>A passionate software engineer with a keen eye for creating elegant solutions to complex problems.</p>
+        <p>With expertise in both front-end and back-end development, I specialize in building scalable applications that deliver exceptional user experiences. My approach combines technical excellence with creative problem-solving.</p>
+        <p>I'm constantly learning and exploring new technologies to stay at the forefront of web development and create innovative solutions that make a difference.</p>
+        <div class="tech-stack">
+          <div class="tech-item" data-tech="JavaScript">JS</div>
+          <div class="tech-item" data-tech="React">⚛️</div>
+          <div class="tech-item" data-tech="Node.js">📦</div>
+          <div class="tech-item" data-tech="Python">🐍</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="education-section">
+      <h2 class="section-title">Education & Achievements</h2>
+      <div class="education-timeline">
+        <div class="education-item" data-aos="fade-right">
+          <div class="education-content">
+            <div class="edu-header">
+              <div class="edu-icon">🎓</div>
+              <div class="edu-main">
+                <h3>B.TECH IN COMPUTER SCIENCE ENG</h3>
+                <p class="school">BML MUNJAL UNIVERSITY, GURGAON</p>
+                <div class="grade-container">
+                  <p class="grade">2ND YEAR | CGPA: 8.48</p>
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 84.8%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="achievements">
+              <h4>Achievements</h4>
+              <ul class="achievement-list">
+                <li class="achievement-item">
+                  <span class="achievement-icon">🏆</span>
+                  Department Rank 1 in Data Structures
+                </li>
+                <li class="achievement-item">
+                  <span class="achievement-icon">🥇</span>
+                  Winner of National Coding Championship 2023
+                </li>
+                <li class="achievement-item">
+                  <span class="achievement-icon">📝</span>
+                  Published Research Paper in AI & Healthcare
+                </li>
+                <li class="achievement-item">
+                  <span class="achievement-icon">👨‍💻</span>
+                  Led Development of Campus Management System
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="education-item" data-aos="fade-left">
+          <div class="education-content">
+            <div class="edu-header">
+              <div class="edu-icon">📚</div>
+              <div class="edu-main">
+                <h3>SENIOR SECONDARY (PRE-ENG.)</h3>
+                <p class="school">CBSE (DELHI)</p>
+                <div class="grade-container">
+                  <p class="grade">85.6%</p>
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 85.6%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="achievements">
+              <h4>Achievements</h4>
+              <ul class="achievement-list">
+                <li class="achievement-item">
+                  <span class="achievement-icon">🌟</span>
+                  School Topper in Computer Science
+                </li>
+                <li class="achievement-item">
+                  <span class="achievement-icon">💡</span>
+                  Founded School's Tech Club
+                </li>
+                <li class="achievement-item">
+                  <span class="achievement-icon">🏅</span>
+                  Won Inter-school Hackathon
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="education-item" data-aos="fade-right">
+          <div class="education-content">
+            <div class="edu-header">
+              <div class="edu-icon">🎯</div>
+              <div class="edu-main">
+                <h3>SECONDARY (HIGH SCHOOL)</h3>
+                <p class="school">CBSE</p>
+                <div class="grade-container">
+                  <p class="grade">Completed with Excellence</p>
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 90%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="achievements">
+              <h4>Achievements</h4>
+              <ul class="achievement-list">
+                <li class="achievement-item">
+                  <span class="achievement-icon">🏆</span>
+                  Academic Excellence Award
+                </li>
+                <li class="achievement-item">
+                  <span class="achievement-icon">📊</span>
+                  Best in Mathematics
+                </li>
+                <li class="achievement-item">
+                  <span class="achievement-icon">🔬</span>
+                  Science Olympiad Finalist
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="project-section">
+        <h2 class="section-title">Project Experience</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="https://via.placeholder.com/400x200" alt="Project 1" class="project-image">
+                <div class="project-content">
+                    <h3 class="project-title">AI-Powered Task Manager</h3>
+                    <p class="project-description">A smart task management application that uses AI to prioritize and categorize tasks. Built with React, Node.js, and TensorFlow.js.</p>
+                    <div class="project-links">
+                        <a href="#" class="project-link">View Project</a>
+                        <a href="#" class="project-link">Source Code</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="https://via.placeholder.com/400x200" alt="Project 2" class="project-image">
+                <div class="project-content">
+                    <h3 class="project-title">E-Learning Platform</h3>
+                    <p class="project-description">A comprehensive learning management system with real-time collaboration features. Uses Vue.js, Firebase, and WebRTC.</p>
+                    <div class="project-links">
+                        <a href="#" class="project-link">View Project</a>
+                        <a href="#" class="project-link">Source Code</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="https://via.placeholder.com/400x200" alt="Project 3" class="project-image">
+                <div class="project-content">
+                    <h3 class="project-title">Smart Home Dashboard</h3>
+                    <p class="project-description">IoT dashboard for monitoring and controlling smart home devices. Built with Angular, Node.js, and MQTT protocol.</p>
+                    <div class="project-links">
+                        <a href="#" class="project-link">View Project</a>
+                        <a href="#" class="project-link">Source Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <section id="skills" class="skills-section">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Design</h3>
+                    <ul class="skill-list">
+                        <li class="skill-item">
+                            <i class="fas fa-paint-brush skill-icon"></i>
+                            UI/UX Design
+                        </li>
+                        <li class="skill-item">
+                            <i class="fas fa-pencil-ruler skill-icon"></i>
+                            Wireframing
+                        </li>
+                        <li class="skill-item">
+                            <i class="fas fa-layer-group skill-icon"></i>
+                            Prototyping
+                        </li>
+                        <li class="skill-item">
+                            <i class="fas fa-users skill-icon"></i>
+                            User Research
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <ul class="skill-list">
+                        <li class="skill-item">
+                            <i class="fab fa-html5 skill-icon"></i>
+                            HTML5/CSS3
+                        </li>
+                        <li class="skill-item">
+                            <i class="fab fa-js skill-icon"></i>
+                            JavaScript/TypeScript
+                        </li>
+                        <li class="skill-item">
+                            <i class="fab fa-react skill-icon"></i>
+                            React.js
+                        </li>
+                        <li class="skill-item">
+                            <i class="fab fa-vuejs skill-icon"></i>
+                            Vue.js
+                        </li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <ul class="skill-list">
+                        <li class="skill-item">
+                            <i class="fab fa-node-js skill-icon"></i>
+                            Node.js
+                        </li>
+                        <li class="skill-item">
+                            <i class="fas fa-database skill-icon"></i>
+                            MongoDB
+                        </li>
+                        <li class="skill-item">
+                            <i class="fas fa-server skill-icon"></i>
+                            Express.js
+                        </li>
+                        <li class="skill-item">
+                            <i class="fas fa-fire skill-icon"></i>
+                            Firebase
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-content">
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" class="form-input" placeholder=" " required>
+                        <label for="name" class="form-label">Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" class="form-input" placeholder=" " required>
+                        <label for="email" class="form-label">Email</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" class="form-input" placeholder=" " required></textarea>
+                        <label for="message" class="form-label">Message</label>
+                    </div>
+                    <button type="submit" class="btn primary">Send Message</button>
+                </form>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h3>Email</h3>
+                            <p>kanishk.gupta@example.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+91 98765 43210</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h3>Location</h3>
+                            <p>New Delhi, India</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-dribbble"></i></a>
+            </div>
+            <p>&copy; 2024 Kanishk Gupta. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <audio id="bgMusic" loop>
+        <source src="background-music.mp3" type="audio/mp3">
+    </audio>
+
+    <script src="main.js"></script>
+</body>
+</html>
