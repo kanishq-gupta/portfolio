@@ -17,11 +17,22 @@
 }
 
 .light-mode {
-    --text-primary: #1e293b;
-    --text-secondary: #475569;
-    --bg-primary: #f8fafc;
-    --bg-secondary: #d3e1ef;
+    --text-primary: #2d3748; /* Soft dark gray for readable text */
+    --text-secondary: #6b46c1; /* Soft purple for secondary text */
+    --bg-primary: #ffffff; /* Crisp white background for a clean look */
+    --bg-secondary: #f7f5ff; /* Very light lavender for sections and cards */
+    --primary-color: #9b79d6; /* Soft lavender purple for primary elements */
+    --secondary-color: #d6bcfa; /* Light lilac for secondary elements */
+    --accent-color: #6b46c1; /* Bold purple for accent highlights */
+    --timeline-color: #e9d8fd; /* Light pastel lavender for progress bars */
+    --glow-color: rgba(155, 121, 214, 0.2); /* Soft purple glow for hover effects */
+    --card-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Light shadow for subtle depth */
+    --input-bg: #ffffff; /* White input fields for clarity */
+    --btn-hover-bg: rgba(155, 121, 214, 0.1); /* Light purple hover effect */
+    --transition: all 0.3s ease; /* Smooth transitions for hover effects */
 }
+
+
 
 * {
     margin: 0;
