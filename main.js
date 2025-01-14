@@ -71,6 +71,23 @@ window.addEventListener('load', () => {
         }, 500);
     }, 1500);
 });
+const mobileMenu = document.getElementById("mobile-menu");
+const menu = document.getElementById("menu");
+const menuLinks = document.querySelectorAll("#menu li a");
+
+// Toggle menu open/close
+mobileMenu.addEventListener("click", () => {
+    menu.classList.toggle("active");
+    mobileMenu.classList.toggle("open");
+});
+
+// Close menu after clicking a link
+menuLinks.forEach(link => {
+    link.addEventListener("click", () => {
+        menu.classList.remove("active");
+        mobileMenu.classList.remove("open");
+    });
+});
 
 // Theme Toggle
 const themeToggle = document.getElementById('themeToggle');
@@ -257,45 +274,24 @@ window.addEventListener('scroll', () => {
   lastScrollY = window.scrollY;
 });
 
-// Custom Cursor
+// Cursor
 document.addEventListener('DOMContentLoaded', () => {
-    const cursor = document.querySelector('.cursor');
-    const cursorFollower = document.querySelector('.cursor-follower');
-  
-    document.addEventListener('mousemove', (e) => {
-      cursor.style.left = e.clientX + 'px';
-      cursor.style.top = e.clientY + 'px';
-      
-      setTimeout(() => {
-        cursorFollower.style.left = e.clientX + 'px';
-        cursorFollower.style.top = e.clientY + 'px';
-      }, 100);
+    // Intersection Observer for animations
+    const observerOption = { threshold: 0.5, rootMargin: '0px' };
+    const observer1 = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, observerOption);
+
+    // Observe elements
+    document.querySelectorAll('.education-item').forEach((item) => {
+        observer1.observe(item);
     });
-  
-    document.addEventListener('mousedown', () => {
-      cursor.style.transform = 'scale(0.8)';
-      cursorFollower.style.transform = 'scale(0.5)';
-    });
-  
-    document.addEventListener('mouseup', () => {
-      cursor.style.transform = 'scale(1)';
-      cursorFollower.style.transform = 'scale(1)';
-    });
-  });
-  
-  const observerOption = { threshold: 0.5, rootMargin: '0px' };
-  const observer1 = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-              entry.target.classList.add('visible');
-          }
-      });
-  }, observerOption);
-  
-  document.querySelectorAll('.education-item').forEach((item) => {
-      observer1.observe(item);
-  });
-  
+});
+
 // Typing Animation
 const fixedText = "Hello! I'm "; // Fixed text that stays
 const animatingText = "Kanishk Gupta"; // Text that animates
